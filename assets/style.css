@@ -318,11 +318,10 @@ header[data-testid="stHeader"] button {
 
 .hero-description {
     font-size: 1.15rem;
-    color: #c8e6c9;
+    color: #000000 !important;
     margin-top: 4px;
     line-height: 1.6;
 }
-
 @media (max-width: 768px) {
     .agroyield-main-brand {
         font-size: 2rem;
