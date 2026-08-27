@@ -81,9 +81,8 @@ h2, h3 {
 
 p, span, label {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    color: var(--text-secondary);
+    color: #000000 !important;
 }
-
 /* Header Badge */
 .hero-badge {
     display: inline-block;
