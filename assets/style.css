@@ -100,17 +100,16 @@ p, span, label {
 
 /* Glassmorphism Feature & Metric Cards */
 .agri-card {
-    background: var(--card-bg);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border: 1px solid var(--card-border);
+    background: #FFFFFF;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid #D7E9D8;
     border-radius: 16px;
     padding: 22px 24px;
-    box-shadow: var(--shadow-card);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 24px rgba(46, 125, 50, 0.08);
+    transition: all 0.3s ease;
     margin-bottom: 18px;
 }
-
 .agri-card:hover {
     border-color: var(--card-hover-border);
     box-shadow: var(--shadow-card), var(--shadow-glow);
