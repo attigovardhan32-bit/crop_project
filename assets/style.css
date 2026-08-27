@@ -746,3 +746,52 @@ div[data-testid="stExpander"] * {
     color: #FFFFFF !important;
     -webkit-text-fill-color: #FFFFFF !important;
 }
+
+
+/* =========================================================
+   🔥 ACTIVE PREDICTION QUERY - VALUE VISIBILITY FIX
+   ========================================================= */
+
+/* Make sidebar prediction values clearly visible */
+section[data-testid="stSidebar"] code {
+    background-color: #E8F5E9 !important;
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+
+    border: 1px solid #A5D6A7 !important;
+    border-radius: 6px !important;
+
+    padding: 3px 7px !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    font-size: 0.90rem !important;
+    font-weight: 600 !important;
+}
+
+/* Fix inline code generated inside markdown */
+section[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] code {
+    background-color: #E8F5E9 !important;
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+/* Force all text inside Active Prediction Query area to black */
+section[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p,
+section[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] span,
+section[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] strong {
+    color: #000000 !important;
+}
+
+/* Sidebar headings */
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3,
+section[data-testid="stSidebar"] h4,
+section[data-testid="stSidebar"] h5,
+section[data-testid="stSidebar"] h6 {
+    color: #000000 !important;
+}
+
+/* Keep sidebar background clean */
+section[data-testid="stSidebar"] {
+    background: #FFFFFF !important;
+}
