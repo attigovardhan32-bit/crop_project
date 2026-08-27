@@ -154,13 +154,21 @@ p, span, label {
 
 /* Metric Pill Badges */
 .metric-pill {
-    background: rgba(18, 63, 41, 0.8);
-    border: 1px solid rgba(129, 199, 132, 0.3);
+    background: #FFFFFF;
+    border: 1px solid #D7E9D8;
     border-radius: 12px;
     padding: 14px 18px;
     text-align: center;
+    box-shadow: 0 5px 16px rgba(46, 125, 50, 0.06);
 }
 
+.metric-pill .metric-label {
+    color: #333333;
+}
+
+.metric-pill .metric-number {
+    color: #2E7D32;
+}
 .metric-pill .metric-label {
     font-size: 0.8rem;
     color: var(--text-muted);
