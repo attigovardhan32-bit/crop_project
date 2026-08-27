@@ -76,10 +76,7 @@ h1 {
     margin-bottom: 0.25rem !important;
 }
 h2, h3 {
-    font-family: 'Outfit', sans-serif !important;
-    color: #c8e6c9 !important;
-    font-weight: 700 !important;
-    letter-spacing: -0.2px;
+    color: #000000 !important;
 }
 
 p, span, label {
