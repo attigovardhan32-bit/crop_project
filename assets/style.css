@@ -527,3 +527,222 @@ a {
 .stApp div[data-testid="stMarkdownContainer"] h6 {
     color: #000000 !important;
 }
+
+/* =========================================================
+   🔥 FINAL TEXT VISIBILITY FIX
+   BLACK TEXT ON ALL LIGHT CARDS AND BOXES
+   ========================================================= */
+
+/* Main application text */
+.stApp {
+    color: #000000 !important;
+}
+
+/* All normal text */
+.stApp p,
+.stApp span,
+.stApp label,
+.stApp div,
+.stApp li,
+.stApp td,
+.stApp th,
+.stApp small,
+.stApp strong {
+    color: #000000 !important;
+}
+
+/* =========================================================
+   HEADINGS
+   ========================================================= */
+
+.stApp h1,
+.stApp h2,
+.stApp h3,
+.stApp h4,
+.stApp h5,
+.stApp h6 {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+/* Markdown headings */
+div[data-testid="stMarkdownContainer"] h1,
+div[data-testid="stMarkdownContainer"] h2,
+div[data-testid="stMarkdownContainer"] h3,
+div[data-testid="stMarkdownContainer"] h4,
+div[data-testid="stMarkdownContainer"] h5,
+div[data-testid="stMarkdownContainer"] h6 {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+/* =========================================================
+   AGRICULTURAL CARDS
+   ========================================================= */
+
+.agri-card,
+.agri-card *,
+.metric-pill,
+.metric-pill *,
+.nav-card,
+.nav-card * {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+/* Metric numbers */
+.metric-pill .metric-number {
+    color: #2E7D32 !important;
+    -webkit-text-fill-color: #2E7D32 !important;
+}
+
+/* Metric labels */
+.metric-pill .metric-label {
+    color: #000000 !important;
+}
+
+/* =========================================================
+   MATHEMATICAL CALCULATION BREAKDOWN
+   ========================================================= */
+
+/* White calculation box */
+.yield-hero-card,
+.yield-hero-card * {
+    color: #000000 !important;
+}
+
+/* Calculation labels */
+.yield-hero-card h4 {
+    color: #000000 !important;
+}
+
+/* If calculation content uses custom divs */
+div[class*="calculation"],
+div[class*="Calculation"],
+div[class*="breakdown"],
+div[class*="Breakdown"] {
+    color: #000000 !important;
+}
+
+div[class*="calculation"] *,
+div[class*="Calculation"] *,
+div[class*="breakdown"] *,
+div[class*="Breakdown"] * {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+/* =========================================================
+   INLINE LIGHT TEXT FIX
+   This overrides old inline light-green/white colors
+   ========================================================= */
+
+.stApp div[style*="color"],
+.stApp span[style*="color"],
+.stApp p[style*="color"],
+.stApp strong[style*="color"] {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+/* =========================================================
+   STREAMLIT TABLES
+   ========================================================= */
+
+div[data-testid="stDataFrame"] *,
+div[data-testid="stTable"] *,
+.stDataFrame *,
+table *,
+thead *,
+tbody *,
+tr *,
+td *,
+th * {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+/* =========================================================
+   INPUT BOXES
+   ========================================================= */
+
+div[data-baseweb="select"],
+div[data-baseweb="select"] *,
+div[data-testid="stNumberInput"],
+div[data-testid="stNumberInput"] *,
+div[data-testid="stTextInput"],
+div[data-testid="stTextInput"] *,
+div[data-testid="stTextArea"],
+div[data-testid="stTextArea"] * {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+/* Input background */
+div[data-baseweb="select"] > div,
+div[data-testid="stNumberInput"] input,
+div[data-testid="stTextInput"] input,
+div[data-testid="stTextArea"] textarea {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+}
+
+/* =========================================================
+   ALERT / EXPANDER BOXES
+   ========================================================= */
+
+div[data-testid="stAlert"] *,
+div[data-testid="stExpander"] * {
+    color: #000000 !important;
+}
+
+/* =========================================================
+   LAND AREA ALLOCATION SECTION
+   ========================================================= */
+
+.stApp [class*="allocation"],
+.stApp [class*="Allocation"],
+.stApp [class*="land-area"],
+.stApp [class*="Land-Area"] {
+    color: #000000 !important;
+}
+
+.stApp [class*="allocation"] *,
+.stApp [class*="Allocation"] *,
+.stApp [class*="land-area"] *,
+.stApp [class*="Land-Area"] * {
+    color: #000000 !important;
+}
+
+/* =========================================================
+   PLOTLY CHART TEXT
+   ========================================================= */
+
+.js-plotly-plot .plotly text {
+    fill: #000000 !important;
+}
+
+.js-plotly-plot .gtitle,
+.js-plotly-plot .xtitle,
+.js-plotly-plot .ytitle {
+    fill: #000000 !important;
+}
+
+.js-plotly-plot .xtick text,
+.js-plotly-plot .ytick text {
+    fill: #000000 !important;
+}
+
+/* =========================================================
+   KEEP GREEN BUTTONS WITH WHITE TEXT
+   ========================================================= */
+
+.stButton > button {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+.stButton > button * {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
