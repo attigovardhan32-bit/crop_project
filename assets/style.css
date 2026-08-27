@@ -309,12 +309,11 @@ header[data-testid="stHeader"] button {
     letter-spacing: 1px;
     margin-top: 5px;
     margin-bottom: 18px;
-    color: #dff5c8;
-    text-shadow: 0 2px 12px rgba(80, 180, 90, 0.25);
+    color: #000000;
 }
 
 .agroyield-main-brand span {
-    color: #b9f27c;
+    color: #2E7D32;
 }
 
 .hero-description {
