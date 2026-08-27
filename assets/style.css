@@ -6,24 +6,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap');
 
 :root {
-    --brand-primary: #f4faf4;
-    --brand-primary-light: #4caf50;
-    --brand-accent: #81c784;
-    --brand-neon: #00e676;
-    --brand-gold: #ffca28;
-    --bg-dark-1: #061d12;
-    --bg-dark-2: #0b2f1f;
-    --bg-dark-3: #11422c;
-    --card-bg: rgba(13, 51, 33, 0.72);
-    --card-border: rgba(129, 199, 132, 0.28);
-    --card-hover-border: rgba(0, 230, 118, 0.6);
-    --text-primary: #f1f8f3;
-    --text-secondary: #c8e6c9;
-    --text-muted: #a5d6a7;
-    --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.35);
-    --shadow-glow: 0 0 20px rgba(76, 175, 80, 0.25);
-}
+    /* Main professional palette */
+    brand-primary: #2E7D32;
+    brand-primary-light: #4CAF50;
+    brand-accent: #81C784;
+    brand-neon: #43A047;
+    brand-gold: #D89B00;
 
+    /* Light Soft Green Theme */
+    bg-dark-1: #F4FAF4;
+    bg-dark-2: #F8FCF8;
+    bg-dark-3: #EEF7EE;
+
+    /* White cards */
+    card-bg: #FFFFFF;
+    card-border: #D7E9D8;
+    card-hover-border: #81C784;
+
+    /* Black text */
+    text-primary: #000000;
+    text-secondary: #000000;
+    text-muted: #333333;
+
+    /* Soft shadows */
+    shadow-card: 0 8px 24px rgba(46, 125, 50, 0.08);
+    shadow-glow: 0 0 20px rgba(76, 175, 80, 0.12);
+}
 /* Base Body & App Container */
 .stApp {
     background:
