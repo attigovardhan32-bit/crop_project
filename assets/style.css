@@ -327,6 +327,157 @@ header[data-testid="stHeader"] button {
         font-size: 2rem;
     }
 
+
+   /* =========================================================
+   🖤 TABLES & INPUT BOXES - BLACK TEXT FIX
+   ========================================================= */
+
+/* ---------- ALL TABLE TEXT ---------- */
+
+.stDataFrame,
+.stDataFrame *,
+div[data-testid="stDataFrame"],
+div[data-testid="stDataFrame"] *,
+div[data-testid="stTable"],
+div[data-testid="stTable"] *,
+table,
+table *,
+thead,
+tbody,
+tr,
+th,
+td {
+    color: #000000 !important;
+}
+
+/* ---------- INPUT BOXES ---------- */
+
+div[data-testid="stTextInput"] input,
+div[data-testid="stNumberInput"] input,
+div[data-testid="stTextArea"] textarea {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+    border: 1.5px solid #A5D6A7 !important;
+}
+
+/* Input placeholder */
+div[data-testid="stTextInput"] input::placeholder,
+div[data-testid="stNumberInput"] input::placeholder,
+div[data-testid="stTextArea"] textarea::placeholder {
+    color: #555555 !important;
+    opacity: 1 !important;
+}
+
+/* ---------- SELECT BOX ---------- */
+
+div[data-baseweb="select"] {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+}
+
+div[data-baseweb="select"] > div {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+    border: 1.5px solid #A5D6A7 !important;
+}
+
+div[data-baseweb="select"] span {
+    color: #000000 !important;
+}
+
+/* Select dropdown text */
+ul[role="listbox"],
+ul[role="listbox"] *,
+li[role="option"],
+li[role="option"] * {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+}
+
+/* Selected option */
+li[aria-selected="true"],
+li[aria-selected="true"] * {
+    background-color: #E8F5E9 !important;
+    color: #000000 !important;
+}
+
+/* ---------- NUMBER INPUT BUTTONS ---------- */
+
+div[data-testid="stNumberInput"] button {
+    background-color: #E8F5E9 !important;
+    color: #000000 !important;
+    border-color: #A5D6A7 !important;
+}
+
+div[data-testid="stNumberInput"] button svg {
+    fill: #000000 !important;
+    color: #000000 !important;
+}
+
+/* ---------- CHECKBOX / RADIO / SLIDER LABELS ---------- */
+
+div[data-testid="stCheckbox"] label,
+div[data-testid="stCheckbox"] label *,
+div[data-testid="stRadio"] label,
+div[data-testid="stRadio"] label *,
+div[data-testid="stSlider"] label,
+div[data-testid="stSlider"] label * {
+    color: #000000 !important;
+}
+
+/* ---------- METRIC BOXES ---------- */
+
+div[data-testid="stMetric"],
+div[data-testid="stMetric"] *,
+div[data-testid="stMetricValue"],
+div[data-testid="stMetricLabel"] {
+    color: #000000 !important;
+}
+
+/* ---------- EXPANDER BOXES ---------- */
+
+div[data-testid="stExpander"],
+div[data-testid="stExpander"] *,
+details,
+details * {
+    color: #000000 !important;
+}
+
+div[data-testid="stExpander"] {
+    background-color: #FFFFFF !important;
+    border: 1px solid #D7E9D8 !important;
+    border-radius: 12px !important;
+}
+
+/* ---------- ALERT / MESSAGE BOXES ---------- */
+
+div[data-testid="stAlert"],
+div[data-testid="stAlert"] * {
+    color: #000000 !important;
+}
+
+/* ---------- GENERAL BOX TEXT ---------- */
+
+.agri-card,
+.agri-card *,
+.metric-pill,
+.metric-pill *,
+.nav-card,
+.nav-card * {
+    color: #000000 !important;
+}
+
+/* Keep green metric numbers */
+.metric-pill .metric-number {
+    color: #2E7D32 !important;
+}
+
+/* Keep green links */
+a {
+    color: #2E7D32 !important;
+}
+
     .hero-description {
         font-size: 1rem;
     }
