@@ -482,3 +482,48 @@ a {
         font-size: 1rem;
     }
 }
+
+
+
+
+
+
+/* =========================================================
+   🔤 STREAMLIT SECTION HEADERS - FORCE BLACK
+   ========================================================= */
+
+/* Headers / subheaders such as:
+   "Input Summary & Historical Baseline Comparison"
+*/
+.stApp [data-testid="stHeaderContainer"],
+.stApp [data-testid="stSubheaderContainer"],
+.stApp h1,
+.stApp h2,
+.stApp h3,
+.stApp h4,
+.stApp h5,
+.stApp h6 {
+    color: #000000 !important;
+}
+
+/* Force the actual text inside Streamlit headings */
+.stApp [data-testid="stHeaderContainer"] *,
+.stApp [data-testid="stSubheaderContainer"] *,
+.stApp h1 *,
+.stApp h2 *,
+.stApp h3 *,
+.stApp h4 *,
+.stApp h5 *,
+.stApp h6 * {
+    color: #000000 !important;
+}
+
+/* Specifically fix Streamlit markdown headings */
+.stApp div[data-testid="stMarkdownContainer"] h1,
+.stApp div[data-testid="stMarkdownContainer"] h2,
+.stApp div[data-testid="stMarkdownContainer"] h3,
+.stApp div[data-testid="stMarkdownContainer"] h4,
+.stApp div[data-testid="stMarkdownContainer"] h5,
+.stApp div[data-testid="stMarkdownContainer"] h6 {
+    color: #000000 !important;
+}
