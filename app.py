@@ -278,7 +278,7 @@ st.markdown("<br/>", unsafe_allow_html=True)
 # -----------------------------------------------------------------------------
 # PREDICTION ACTION & EXECUTION
 # -----------------------------------------------------------------------------
-predict_btn = st.button("🔮 Predict Crop Yield & Generate Analytics", use_container_width=True)
+predict_btn = st.button("✨ Predict Crop Yield & Generate Analytics", use_container_width=True)
 
 if predict_btn:
     input_payload = {
