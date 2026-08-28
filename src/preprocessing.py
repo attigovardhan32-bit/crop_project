@@ -11,19 +11,14 @@ from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 # Standard feature names
-CATEGORICAL_FEATURES = [
-    "Area",
-    "Item",
-    "Season"
-]
+categorical_features = ["Area", "Item"]
 
-NUMERICAL_FEATURES = [
+numerical_features = [
     "Year",
     "average_rain_fall_mm_per_year",
     "pesticides_tonnes",
     "avg_temp"
 ]
-
 ALL_FEATURES = CATEGORICAL_FEATURES + NUMERICAL_FEATURES
 TARGET_COLUMN = "hg/ha_yield"
 
