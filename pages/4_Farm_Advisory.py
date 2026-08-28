@@ -51,7 +51,7 @@ countries, all_crops, _ = get_country_and_crop_lists(df)
 with st.sidebar:
     st.markdown("### 🌿 AgroYield AI")
     st.page_link("app.py", label="🏠 Yield Prediction Home", icon="🌱")
-    st.page_link("pages/1_Prediction_Result.py", label="📊 Results Dashboard", icon="📈")
+    st.page_link("pages/1_Prediction_Result.py", label="🌾 Results Dashboard", icon="📈")
     st.page_link("pages/2_Model_Performance.py", label="🧪 Model Performance", icon="🔬")
     st.page_link("pages/3_Tree_Calculator.py", label="🌳 Tree Planting Calculator", icon="🌲")
     st.markdown("---")
