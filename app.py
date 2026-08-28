@@ -80,7 +80,7 @@ metrics = load_model_metrics()
 
 if not os.path.exists(model_path):
     st.warning("⚠️ No trained machine learning model artifact found in `models/`.")
-    if st.button("🚀 Train Random Forest Model Now"):
+    if st.button("🤖 Train Random Forest Model Now"):
         with st.spinner("Training Random Forest model pipeline..."):
             metrics = train_and_evaluate_model(model_type="random_forest")
             st.success("Model trained successfully! Please proceed with prediction.")
@@ -97,7 +97,7 @@ with st.sidebar:
     st.markdown("---")
 
     if metrics:
-        st.markdown("#### 📊 Model Status")
+        st.markdown("#### 🌾 Model Status")
         st.markdown(f"**Algorithm:** `{metrics.get('algorithm', 'RandomForestRegressor')}`")
         st.markdown(f"**Validation R²:** `{metrics.get('r2_test', 0.9844):.4f}`")
         st.markdown(f"**MAE:** `{metrics.get('mae', 4134.34):,.2f} hg/ha`")
@@ -107,7 +107,7 @@ with st.sidebar:
     st.markdown("---")
     st.markdown("#### 🧭 Quick Navigation")
     st.page_link("app.py", label="🏠 Yield Prediction Home", icon="🌱")
-    st.page_link("pages/1_Prediction_Result.py", label="📈 Detailed Results Dashboard", icon="📊")
+    st.page_link("pages/1_Prediction_Result.py", label="📈 Detailed Results Dashboard", icon="🌾")
     st.page_link("pages/2_Model_Performance.py", label="🧪 Model Performance & R²", icon="🔬")
     st.page_link("pages/3_Tree_Calculator.py", label="🌳 Tree Planting Calculator", icon="🌲")
     st.page_link("pages/4_Farm_Advisory.py", label="🌦 Farm & Soil Advisory", icon="🌾")
@@ -404,16 +404,16 @@ if "latest_prediction" in st.session_state:
     with res_banner_col2:
         st.page_link(
             "pages/1_Prediction_Result.py",
-            label="📊 Open Dedicated Results Page",
-            icon="🚀",
+            label="🌾 Open Dedicated Results Page",
+            icon="🤖",
             use_container_width=True,
         )
 
     # Interactive Visualizations Tabs
-    st.markdown("### 📊 Interactive Visual Analytics")
+    st.markdown("### 🌾 Interactive Visual Analytics")
     tab_trend, tab_actual, tab_importance, tab_advisory = st.tabs([
         "📈 Historical Trajectory & Forecast",
-        "🎯 Actual vs Predicted Scatter",
+        "🌿 Actual vs Predicted Scatter",
         "🔍 Feature Importances",
         "🌾 Farm & Soil Advisory",
     ])
@@ -450,7 +450,7 @@ if "latest_prediction" in st.session_state:
             st.markdown(f"**🌱 Soil Compatibility:** Current selection is `{adv['soil_type']}` (Optimal: `{adv['ideal_soil']}`).")
         with adv_c2:
             st.markdown(f"**🧪 N-P-K Guidance:** {adv['npk_advice']}")
-            st.markdown(f"**🎯 Target Ratio:** `{adv['recommended_npk']}`")
+            st.markdown(f"**🌿 Target Ratio:** `{adv['recommended_npk']}`")
 
 st.markdown("<hr/>", unsafe_allow_html=True)
 st.caption("🌱 AgroYield AI Precision Agriculture Platform | Powered by Machine Learning & Historical Environmental Datasets")
