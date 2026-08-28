@@ -44,7 +44,7 @@ if os.path.exists(css_path):
 with st.sidebar:
     st.markdown("### 🌿 AgroYield AI")
     st.page_link("app.py", label="🏠 Yield Prediction Home", icon="🌱")
-    st.page_link("pages/1_Prediction_Result.py", label="📊 Results Dashboard", icon="📈")
+    st.page_link("pages/1_Prediction_Result.py", label="🌾 Results Dashboard", icon="📈")
     st.page_link("pages/2_Model_Performance.py", label="🧪 Model Performance", icon="🔬")
     st.page_link("pages/4_Farm_Advisory.py", label="🌾 Farm Advisory", icon="🌦")
     st.markdown("---")
@@ -145,7 +145,7 @@ st.markdown("<hr/>", unsafe_allow_html=True)
 # -----------------------------------------------------------------------------
 # RESULT DISPLAY CARDS
 # -----------------------------------------------------------------------------
-st.markdown("### 📊 Calculated Planting Capacity & Eco-Metrics")
+st.markdown("### 🌾 Calculated Planting Capacity & Eco-Metrics")
 
 res_c1, res_c2, res_c3, res_c4 = st.columns(4)
 
