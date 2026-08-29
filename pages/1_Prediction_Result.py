@@ -133,7 +133,7 @@ st.markdown(
 st.markdown(
     f"""
     <div class="yield-hero-card">
-        <h4>🎯 PREDICTED HARVEST YIELD — {inp['Item'].upper()} ({inp['Area'].upper()})</h4>
+        <h4>🤖 PREDICTED HARVEST YIELD — {inp['Item'].upper()} ({inp['Area'].upper()})</h4>
         <div class="yield-value">{hg_yield:,.2f} <span style="font-size: 1.6rem; color: #a7f3d0;">hg/ha</span></div>
         <div class="yield-subvalue">📦 Equivalent to <b>{tonnes_yield:,.2f} Tonnes per Hectare</b></div>
         <div style="margin-top: 15px; font-size: 1.05rem; color: #e8f5e9; background: rgba(0,0,0,0.25); display: inline-block; padding: 6px 20px; border-radius: 20px;">
@@ -232,7 +232,7 @@ with col_summary_2:
     st.markdown(
         f"""
         <div class="agri-card">
-            <h4 style="color: #a7f3d0; margin-bottom: 12px;">📊 Benchmark Comparison ({inp['Area']})</h4>
+            <h4 style="color: #a7f3d0; margin-bottom: 12px;">🌾 Benchmark Comparison ({inp['Area']})</h4>
             <table style="width: 100%; color: #e8f5e9; font-size: 0.95rem;">
                 <tr><td style="padding: 6px 0;"><b>Historical Avg Yield:</b></td><td style="text-align: right;">{hist_avg_yield:,.0f} hg/ha ({hist_avg_yield/10000:.2f} t/ha)</td></tr>
                 <tr><td style="padding: 6px 0;"><b>Predicted vs Historical:</b></td><td style="text-align: right; color: {'#00e676' if yield_diff_pct >= 0 else '#ff7043'};"><b>{yield_diff_pct:+.1f}%</b></td></tr>
