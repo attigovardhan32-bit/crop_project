@@ -38,7 +38,7 @@ from src.evaluation import (
 # -----------------------------------------------------------------------------
 st.set_page_config(
     page_title="Crop Yield Prediction Results | AgroYield AI",
-    page_icon="📊",
+    page_icon="🌾",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -117,7 +117,7 @@ with st.sidebar:
 st.markdown(
     """
     <div style="margin-bottom: 20px;">
-        <span class="hero-badge">📊 Official Machine Learning Inference</span>
+        <span class="hero-badge">🌳 Official Machine Learning Inference</span>
         <h1>🌾 Crop Yield Prediction Result</h1>
         <p style="font-size: 1.1rem; color: #c8e6c9;">
             Comprehensive yield forecast, feature impact analysis, historical trends, and agronomic insights.
