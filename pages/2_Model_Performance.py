@@ -56,7 +56,7 @@ df = load_dataset()
 with st.sidebar:
     st.markdown("### 🌿 AgroYield AI")
     st.page_link("app.py", label="🏠 Yield Prediction Home", icon="🌱")
-    st.page_link("pages/1_Prediction_Result.py", label="📊 Results Dashboard", icon="📈")
+    st.page_link("pages/1_Prediction_Result.py", label="🏆 Results Dashboard", icon="📈")
     st.page_link("pages/3_Tree_Calculator.py", label="🌳 Tree Planting Calculator", icon="🌲")
     st.page_link("pages/4_Farm_Advisory.py", label="🌾 Farm Advisory", icon="🌦")
     st.markdown("---")
@@ -153,7 +153,7 @@ with m_exp1:
     st.markdown(
         """
         <div class="agri-card">
-            <h4 style="color: #a7f3d0;">📊 Coefficient of Determination (R²)</h4>
+            <h4 style="color: #a7f3d0;">📐 Coefficient of Determination (R²)</h4>
             <p><b>Score: 0.9844 (98.44%)</b></p>
             <p style="font-size: 0.9rem; color: #d8eadb;">
                 Measures the proportion of variance in crop yield explained by the combined agricultural 
@@ -169,7 +169,7 @@ with m_exp2:
     st.markdown(
         """
         <div class="agri-card">
-            <h4 style="color: #a7f3d0;">🎯 Mean Absolute Error (MAE)</h4>
+            <h4 style="color: #a7f3d0;">⚠️ Mean Absolute Error (MAE)</h4>
             <p><b>Error: 4,134 hg/ha (0.41 t/ha)</b></p>
             <p style="font-size: 0.9rem; color: #d8eadb;">
                 The average absolute magnitude of errors between actual and predicted yield across all global crops.
@@ -201,10 +201,10 @@ st.markdown("<br/>", unsafe_allow_html=True)
 # -----------------------------------------------------------------------------
 # DETAILED CHARTS
 # -----------------------------------------------------------------------------
-st.markdown("### 📊 Diagnostic Visualizations")
+st.markdown("### 🔍 Diagnostic Visualizations")
 
 tab_scatter, tab_fi, tab_res, tab_crop_dist = st.tabs([
-    "🎯 Actual vs. Predicted Validation",
+    "🧠 Actual vs. Predicted Validation",
     "🔍 Feature Importance Spectrum",
     "📉 Residual Error Analysis",
     "🌾 Global Crop Yield Distributions",
